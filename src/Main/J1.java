@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class J1 {
     public static void main(String[] args) {
-    //1. Выбросил случайное целое число в диапазоне от -1000 до 1000 и сохранить в i
+    //1. Выбросил случайное целое число в диапазоне от -1000 до 1000 и сохранил в i
         int i = (int)(Math.random()*(1000-(-1000)))+(-1000);
         System.out.println("вот рандомное число i: " + i);
 
@@ -17,7 +17,7 @@ public class J1 {
         int n = temp.length();
         System.out.println("старший значащий бит n стоит на позиции " + n);
 
-    //3. Нашёл все кратные n числа в диапазоне от i до Short.MAX_VALUE сохранить в массив m1
+    //3. Нашёл все кратные n числа в диапазоне от i до Short.MAX_VALUE сохранил в массив m1
         ArrayList<Integer> arrayListDivisible = new ArrayList<>();
         for (int j = i; j < Short.MAX_VALUE; j++) {
             if (j % n == 0) {
@@ -28,7 +28,7 @@ public class J1 {
         for (int j = 0; j < arrayListDivisible.size(); j++) {
             m1[j] = arrayListDivisible.get(j);
         }
-    //4. Нашёл все некратные n числа в диапазоне от Short.MIN_VALUE до i и сохранить в массив m2
+    //4. Нашёл все некратные n числа в диапазоне от Short.MIN_VALUE до i и сохранил в массив m2
         ArrayList<Integer>arrayListNonDivisible = new ArrayList<>();
         for (int j = Short.MIN_VALUE; j < i; j++) {
             if (j % n != 0) {
