@@ -11,7 +11,7 @@ public class J1 {
         int i = (int)(Math.random()*(1000-(-1000)))+(-1000);
         System.out.println("вот рандомное число i: " + i);
 
-    //2. Посчитал и сохранить в n номер старшего значащего бита выпавшего числа
+    //2. Посчитал и сохранил в n номер старшего значащего бита выпавшего числа
         String temp = Integer.toBinaryString(i);
         System.out.println("вот оно же в двоичной системе: " + temp);
         int n = temp.length();
@@ -40,7 +40,7 @@ public class J1 {
         for (int j = 0; j < arrayListNonDivisible.size(); j++) {
             m2[j] = arrayListNonDivisible.get(j);
         }
-    //5. Сохранить оба массива в файлы с именами m1 и m2 соответственно.
+    //5. Сохранил оба массива в файлы с именами m1 и m2 соответственно.
         try (FileWriter fw = new FileWriter("file.txt", false)) {
             fw.write("m1 is here: " + Arrays.toString(m1));
             fw.append("\n");
