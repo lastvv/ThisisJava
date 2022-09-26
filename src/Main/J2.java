@@ -6,7 +6,7 @@
 //*Замените символ “=” на слово “равно”. Используйте методы StringBuilder.replace().
 //**Сравнить время выполнения пунка 6 со строкой содержащей 10000 символов "=" средствами String и StringBuilder.*/
 
-package ThisisJava;
+package Main;
 
 public class J2 {
 
