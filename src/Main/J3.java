@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.ListIterator;
 
-public class J2 {
+public class J3 {
     public static void main(String[] args) {
 
         // Создайте новый список массивов, добавить несколько цветов (строку) и вывести коллекцию на экран.
@@ -20,6 +20,7 @@ public class J2 {
         for (int i = 0; i < rainbow.size(); i++) {
             System.out.println(rainbow.get(i));
         }
+        
         // Проитерируйте все элементы списка цветов и добавьте к каждому символ '!'.
         ListIterator <String> liter = rainbow.listIterator();
         while (liter.hasNext()) {
@@ -30,6 +31,7 @@ public class J2 {
         for (int i = 0; i < rainbow.size(); i++) {
             System.out.println(rainbow.get(i));
         }
+        
         // Напишите программу для вставки элемента в список массивов в первой позиции.
         rainbow.add(1, "black");
 
@@ -45,12 +47,14 @@ public class J2 {
         for (int i = 0; i < rainbow.size(); i++) {
             System.out.println(rainbow.get(i));
         }
+        
         // Напишите программу для удаления третьего элемента из списка массивов
         rainbow.remove(2);
         System.out.println("удалил третий элемент: ");
         for (int i = 0; i < rainbow.size(); i++) {
             System.out.println(rainbow.get(i));
         }
+        
         // Напишите программу для поиска элемента в списке массивов
         System.out.println("распечатал все элементы, содержащие 'bl': ");
         for (String color : rainbow) {
@@ -58,12 +62,14 @@ public class J2 {
                 System.out.println(color);
             }
         }
+        
         // Напишите программу для сортировки заданного списка массивов.
         Collections.sort(rainbow);
         System.out.println("а вот отсортированный по алфавиту список: ");
         for (int i = 0; i < rainbow.size(); i++) {
             System.out.println(rainbow.get(i));
         }
+        
         // Напишите программу для копирования одного списка массивов в другой
 
         ArrayList<String>newRainbow = new ArrayList<>();
