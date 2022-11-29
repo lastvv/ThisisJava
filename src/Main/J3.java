@@ -21,7 +21,7 @@ public class J3 {
             System.out.println(rainbow.get(i));
         }
         
-        // Проитерируйте все элементы списка цветов и добавьте к каждому символ '!'.
+        // Итерация всех элементов списка цветов и добавления к каждому символа '!'.
         ListIterator <String> liter = rainbow.listIterator();
         while (liter.hasNext()) {
             String i = liter.next();
@@ -32,30 +32,30 @@ public class J3 {
             System.out.println(rainbow.get(i));
         }
         
-        // Напишите программу для вставки элемента в список массивов в первой позиции.
+        // Вставить элемент в список в первой позиции.
         rainbow.add(1, "black");
 
-        // Извлеките элемент (по указанному индексу) из заданного списка.
+        // Извлечь элемент (по указанному индексу) из заданного списка.
         System.out.println("добавил новый цвет под индексом 1: " + rainbow.get(1));
         for (int i = 0; i < rainbow.size(); i++) {
             System.out.println(rainbow.get(i));
         }
         
-        // Обновите элемент массива по заданному индексу.
+        // Обновить определенный элемент списка по заданному индексу.
         System.out.println("обновил элемент с индексом 0: ");
         rainbow.set(0, "mint");
         for (int i = 0; i < rainbow.size(); i++) {
             System.out.println(rainbow.get(i));
         }
         
-        // Напишите программу для удаления третьего элемента из списка массивов
+        // Удалить третий элемент из списка.
         rainbow.remove(2);
         System.out.println("удалил третий элемент: ");
         for (int i = 0; i < rainbow.size(); i++) {
             System.out.println(rainbow.get(i));
         }
         
-        // Напишите программу для поиска элемента в списке массивов
+        // Напишите программу для поиска элемента в списке массивов 
         System.out.println("распечатал все элементы, содержащие 'bl': ");
         for (String color : rainbow) {
             if(color.contains("bl")){
@@ -63,20 +63,12 @@ public class J3 {
             }
         }
         
-        // Напишите программу для сортировки заданного списка массивов.
+        // Ссортировки заданного списка массивов.
         Collections.sort(rainbow);
         System.out.println("а вот отсортированный по алфавиту список: ");
         for (int i = 0; i < rainbow.size(); i++) {
             System.out.println(rainbow.get(i));
         }
-        
-        // Напишите программу для копирования одного списка массивов в другой
-
-        ArrayList<String>newRainbow = new ArrayList<>();
-        System.out.println("в новый список newRainbow скопировал данные из rainbow: ");
-        newRainbow.addAll(rainbow);
-        for (int i = 0; i < newRainbow.size(); i++) {
-            System.out.println(newRainbow.get(i));
         }
     }
 }
